@@ -1,27 +1,30 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
-    <avengers></avengers>
+    <app-header></app-header>
+    <app-avengers></app-avengers>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import Avengers from './Avengers.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import Avengers from './components/Avengers.vue'
 
 export default {
   components: {
-    avengers: Avengers
+    'app-header': Header,
+    'app-footer': Footer,
+    'app-avengers': Avengers
   },
   data () {
     return {
-      title: 'Avenger App',
+
     }
   }
 }
 </script>
 
 <style scoped>
-h1 {
-  color: purple;
-}
+
 </style>
