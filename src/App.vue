@@ -6,7 +6,12 @@
 </template>
 
 <script>
+import Avengers from './Avengers.vue'
+
 export default {
+  components: {
+    avengers: Avengers
+  },
   data () {
     return {
       title: 'Avenger App',
