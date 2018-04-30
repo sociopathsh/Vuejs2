@@ -1,7 +1,10 @@
 <template>
-    <ul>
-        <li v-for="avenger in avengers">{{ avenger }}</li>
-    </ul>
+    <div>
+        <h1>Lists of Avengers</h1>
+        <ul>
+            <li v-for="avenger in avengers">{{ avenger }}</li>
+        </ul>
+    </div>
 </template>
 
 <script>
@@ -14,6 +17,8 @@
     }
 </script>
 
-<style>
-
+<style scoped>
+h1 {
+    color: green;
+}
 </style>
