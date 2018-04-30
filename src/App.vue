@@ -1,33 +1,22 @@
 <template>
   <div>
-    <app-header v-bind:title="title"></app-header>
-    <app-avengers v-bind:ninjas="ninjas"></app-avengers>
-    <app-footer v-bind:title="title"></app-footer>
+    <form-helper>
+      <h1 slot="title">I am the title slot</h1>
+      <p slot="text">I am the paragraph text for the slot</p>
+    </form-helper>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-import Avengers from './components/Avengers.vue'
+import formHelper from './formHelper.vue';
 
 export default {
   components: {
-    'app-header': Header,
-    'app-footer': Footer,
-    'app-avengers': Avengers
+    'form-helper': formHelper
   },
   data () {
     return {
-      ninjas: [
-        {name: 'Ryu', speciality: 'Vue Components', show: false},
-        {name: 'Crystal', speciality: 'HTML Wizardry', show: false},
-        {name: 'Hitoshi', speciality: 'Click Events', show: false},
-        {name: 'Tango', speciality: 'Conditionals', show: false},
-        {name: 'Kami', speciality: 'Webpack', show: false},
-        {name: 'Yoshi', speciality: 'Data Diggin', show: false}
-      ],
-      title: 'Vue Ninjas'
+
     }
   },
 }
