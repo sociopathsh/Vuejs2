@@ -13,10 +13,10 @@
             </div>
             <div id="useful-links">
                 <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
                 </ul>
             </div>
         </form>
@@ -24,16 +24,16 @@
 </template>
 
 <script>
-
+    // Imports
     export default {
         components: {
-
         },
         data () {
             return {
-
             }
         },
+        methods: {
+        }
     }
 </script>
 
